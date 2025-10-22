@@ -1,0 +1,16 @@
+# Minimal Python dependencies for this ViT example project
+# Note: Install `torch` using the official instructions for your CUDA version:
+# https://pytorch.org/get-started/locally/
+# Example (CPU-only):
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# Example (CUDA 11.8):
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+
+torch
+torchvision
+einops
+tensorboard
+
+# Optional / dev
+# pytest  # if you add tests
+# tqdm   # for progress bars
