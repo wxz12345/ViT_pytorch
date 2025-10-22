@@ -159,8 +159,6 @@ criterion = torch.nn.CrossEntropyLoss(weight=weights.to(device))
 - 若你希望在训练过程中同时保留验证集，请自行实现验证 loader 或在训练循环中加入验证步骤（当前 `train.py` 默认不接收 `--val-dir`）。
 - 若计划在大数据集上使用 OvR，请改写 `Agent/ovr_trainer.py` 中的数据包装逻辑，避免一次性将全部图像张量加载到内存。
 
-如果你需要我把 README 翻译成英文版、添加快速开始动画（GIF）、或为常用配置添加示例脚本（比如 GPU/CPU 的安装命令），告诉我需要哪些内容，我可以继续补充。
-
 ---
 
 更新摘要：已根据仓库当前代码（`train.py` / `test.py` / `Agent/ovr_trainer.py` / `vit_pytorch/*`）整理并更新 README，包含运行示例与注意事项。
